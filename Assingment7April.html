@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        header{background-color:aquamarine; color:black;}
+        p{
+            background-color:darkviolet; color:white;
+        }
+        #div1{
+            background-color:purple;
+            color:white;
+
+        }
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>MY NAME IS</header>
+    <p>Abhishek</p>
+    <div id="div1">Abhishek</div>
+    <p id="p">Toggle</p>
+
+    <h1>this is h1</h1>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <div id="div2">this is div</div>
+    <input type="button" id="b1" value="Show" />
+    <input type="button" id="b2" value="Hide" />
+    <!--<input type="button" id="animate" value="Show Animation" />-->
+    <button type="button" id="animate" value="Show Animation">Show Animation</button>
+    <button type="button" id="tog">Toggle</button>
+    <button type="button" id="addc">AddClass</button>
+    <button type="button" id="add">Addclass2</button>
+    <button type="button" id="remove">RemoveClass</button>
+    <button type="button" id="toggle">Toggleclass</button>
+
+    <p>Enter number 1<input type="number" id="num1" /></p>
+    <p>Enter number 2<input type="number" id="num2" /></p>
+    <p>Result<input type="number" id="addition" /></p>
+    <div id="addText"></div>
+    <div id="addHtml"></div>
+    <button type="button" id="sum">Addition</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#b1").click(function () {
+                $("p").show("explode", 2000);
+            });
+
+            $("#b2").click(function () {
+                $("p").hide("clip", 1500);
+            });
+
+            $("#animate").click(function () {
+                $("div").animate({
+                    top: '300px'
+                }, 2000).animate({
+                    height: '200px',
+                    width: '200px',
+                }, 2000).slideUp(1000).slideDown(2000)
+            });
+
+            $("#tog").click(function () {
+                $("#p").toggle();
+            });
+
+            $("#addc").click(function () {
+                $("h1,h2").addClass("red");
+                $("h3").addClass("important");
+            });
+
+            $("#add").click(function () {
+                $("#div2").addClass("important red");
+            });
+
+            $("#remove").click(function () {
+                $("#div2").removeClass("red");
+            });
+            $("#toggle").click(function () {
+                $("h1,h2").toggleClass("red");
+            });
+            $("#sum").click(function () {
+                var n1 = parseFloat($("#num1").val());
+                var n2 = parseFloat($("#num2").val());
+                var c = n1 + n2;
+                $("#addition").val(c);
+                $("#addText").text("Addition is = " + c);
+                $("#addHtml").html("<b>Addition is = </b>" + c);
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>

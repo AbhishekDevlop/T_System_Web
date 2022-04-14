@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>About Us</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+
+        .container-fluid {
+            position: relative;
+            height: 60px;
+            border: 10px solid white;
+        }
+
+        .ab {
+            font-size: x-large;
+            background-color: #07639f;
+            color: white;
+        }
+        .butt .btn {
+            float: right;
+            align-content: end;
+            color: #0d6efd;
+            background-color: #fff;
+            border-color: #0d6efd;
+            margin-left: 4px;
+        }
+
+        .navbar .container-fluid {
+            background-color: #07639f;
+            height: 60px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+        }
+
+        .navbar-light .navbar-brand {
+            color: white;
+            background-color: #0d6efd;
+        }
+        a:hover {
+            color: whitesmoke !important;
+            font-size: large;
+        }
+
+        li {
+            font-size: large;
+        }
+
+        .navbar-text {
+            font-size: xx-large;
+            color: white !important;
+            text-align: center !important;
+        }
+
+        /* typical phone screen resolution */
+        @media only screen and (max-width : 667px) {
+
+        }
+        /* landscape orientation */
+        @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        }
+        /* portrait orientation */
+        @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+
+            .butt {
+                position: fixed;
+                float: right;
+                right: 22%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <nav style="background-color: #0d6efd;" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div style="background-color: #0d6efd" class="container-fluid">
+                <a class="navbar-brand" href="#">Flipkart.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ShoppingHome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shoppingContactUs.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ShoppingAboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+               
+            </div>
+        </nav>
+    </section>
+    <section>
+        
+            <div style="position: absolute; margin-top: 8px; " class="butt">
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sing Up
+                </button>
+            </div>
+        
+    </section>
+    <section style="margin-top:77px;" class="banner">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="margin-top:50px" src="Screenshot (391).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img style="margin-top:50px" src="Screenshot (392).png" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+   a <footer class="footer">
+        <h2>References</h2>
+        <p><a href="https://seller.flipkart.com/sell-online/faq">FAQs</a></p>
+        <p><a href="ShoppingHome.html">Home</a></p>
+        <p><a href="shoppingContactUs.html">Contact Us</a></p>
+        <p><a href="AboutUspage.html">About Us</a></p>
+
+
+
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
